@@ -1,0 +1,19 @@
+---
+testbed:
+    name: Eve Lab 
+    credentials:
+        default:
+            username: rancid 
+            password: "CHANGED"
+
+devices:
+    br01-eve-asva01:
+        type: junos 
+        connections:
+            vty:
+                protocol: telnet
+                ip: 10.10.86.143
+                port: 32769
+            ssh:
+                protocol: ssh
+                ip: "10.10.10.10"
